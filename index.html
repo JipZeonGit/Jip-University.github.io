@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园网主页</title>
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <script src="./js/common.js"></script>
+</head>
+
+<body>
+    <div class="indexheader">
+        <div id="header">
+            <div class='logo'>
+                <img src="./images/logo.jpg" alt="大学">
+            </div>
+
+            <form name="searchingForm" action="" target="_blank">
+                <div class="searchbox">
+                    <input name="s" type="hidden" value="">
+                    <input name="q" type="text" class="search" value="搜索"
+                        onfocus="if (value =='搜索'){value ='';this.style.color='#000000'}"
+                        onblur="if (value ==''){value='搜索';this.style.color='#CCC'}"
+                        onkeydown="if(this.value=='搜索'){this.value='';this.style.color=000000}">
+                    <input type="button" class="searchbotton" name="sbtn" onclick="submit()">
+                </div>
+                <input type="hidden" value="0" name="pagenum">
+            </form>
+        </div>
+    </div>
+    <!--头部部分写完-->
+
+    <div class="indexnav">
+        <div id="nav1">
+            <a href="./index.html">
+                <span class="home">&nbsp;</span>
+            </a>
+
+            <a href="./index.html"><span class="on" id="tag2"
+                    onmouseover="switchTag('tag2','subnav2');this.blur();">我的大学</span>
+            </a>
+
+            <a href="./index.html"><span class="sp" id="tag3"
+                    onmouseover="switchTag('tag3','subnav3');this.blur();">疫情防控</span>
+            </a>
+
+            <a href="./index.html"><span class="sp" id="tag4"
+                    onmouseover="switchTag('tag4','subnav4');this.blur();">新生报到</span>
+            </a>
+
+            <a href="./index.html"><span class="sp" id="tag5"
+                    onmouseover="switchTag('tag5','subnav5');this.blur();">数字校园</span>
+            </a>
+
+            <a href="./index.html"><span class="sp" id="tag6"
+                    onmouseover="switchTag('tag6','subnav6');this.blur();">学校地图</span>
+            </a>
+
+            <a href="./index.html"><span class="sp" id="tag7"
+                    onmouseover="switchTag('tag7','subnav7');this.blur();">招生概况</span>
+            </a>
+
+            <a href="./pages/graduation.html"><span class="sp" id="tag8"
+                    onmouseover="switchTag('tag8','subnav8');this.blur();">毕业季</span>
+            </a>
+
+            <a href="./pages/upload.html"><span class="sp" id="tag9"
+                    onmouseover="switchTag('tag9','subnav9');this.blur();">信息反馈</span>
+            </a>
+
+        </div>
+    </div>
+    <!--导航栏部分写完-->
+    <div class="indexsubnav">
+        <div id="subnav">
+            <div id="subnav2" class="hidecontent">
+                <a href="./index.html">学校简介</a>
+                |
+                <a href="./index.html">学校地图</a>
+                |
+                <a href="./index.html">现任教师</a>
+                |
+                <a href="./index.html">校歌 校训 校徽</a>
+                |
+                <a href="./index.html">学校历史</a>
+                |
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="mainbody">
+            <!--嵌套一个滚动轮播图页面-->
+            <iframe src="./pages/slide.html" width=998px height=320px frameborder="no" border="0" marginwidth="0"
+                marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+            <!--主页的布局-->
+
+            <div class="cols">
+                <div class="colsleft">
+                    <div class="cols01">
+                        <div class="channel">
+                            <h3>
+                                <span id="news01">近日新闻</span>
+                            </h3>
+
+                            <div class="newslist01">
+                                <ul>
+                                    <li><span class="newstime">06-25</span>热烈庆祝中国共产党建立100周年</li>
+                                    <li><span class="newstime">06-17</span>热烈祝贺神舟十二号载人航天飞船发射成功</li>
+                                    <li><span class="newstime">06-17</span>热烈祝贺神舟十二号与天和核心舱对接完毕</li>
+                                    <li><span class="newstime">06-23</span>习近平总书记与神舟十二号航天员天地通话</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="channel">
+                            <h3>
+                                <span id="news01">广州要闻</span>
+                            </h3>
+
+                            <div class="newslist01">
+                                <ul>
+                                    <li><span class="newstime">06-26</span>海心桥建成开通，横跨珠江人行桥</li>
+                                    <li><span class="newstime">06-26</span>广州白云机场轨道交通枢纽动工</li>
+                                    <li><span class="newstime">06-26</span>广州南沙珠江街道一区域降为低风险地区</li>
+                                    <li><span class="newstime">06-25</span>广州花都全区社会餐饮恢复堂食</li>
+                                    <li><span class="newstime">06-25</span>广州荔湾返茂名无症状者治愈出院</li>
+                                    <li><span class="newstime">06-25</span>广州海关检测饼干盒藏新型毒品</li>
+                                    <li><span class="newstime">06-25</span>广州白云全区社会餐饮恢复堂食</li>
+                                    <li><span class="newstime">06-25</span>广州卫健委：本轮疫情基本环节有效控制</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cols01">
+                        <div class="channel">
+                            <h3>
+                                <span id="news01">学术动态</span>
+                            </h3>
+
+                            <div class="newslist01">
+                                <ul>
+                                    <li><span class="newstime">06-26</span>关于我国“智慧养老”的研究</li>
+                                    <li><span class="newstime">06-26</span>政务新媒体平台蹭热点的探讨</li>
+                                    <li><span class="newstime">06-24</span>浅谈新时期高校图书馆创新服务</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="channel">
+                            <h3>
+                                <span id="news01">通知</span>
+                            </h3>
+
+                            <div class="newslist01">
+                                <ul>
+                                    <li><span class="newstime">06-26</span>我校将举行学位授予仪式</li>
+                                    <li><span class="newstime">06-26</span>我校将举行中国共产党建立100周年活动</li>
+                                    <li><span class="newstime">06-26</span>我校全员第二次核酸检测工作完美结束</li>
+                                    <li><span class="newstime">06-24</span>我校全员疫苗第二针接种工作完美结束</li>
+                                    <li><span class="newstime">06-26</span>我校近期发生多起学生被诈骗事件</li>
+                                    <li><span class="newstime">06-10</span>关于做好食堂就餐疫情防控的通知</li>
+                                    <li><span class="newstime">05-27</span>关于开展2021-2022学年第一学期选课工作</li>
+                                    <li><span class="newstime">03-11</span>关于进一步加强校园疫情防控工作的通知</li>
+                                    <li><span class="newstime">03-10</span>关于校医室挂号安排的通知</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cols02">
+                    <div class="channel">
+                        <h3>当前时间</h3>
+
+                        <body onload="show()">
+                            <!-- 网页加载时调用一次，以后自动调用-->
+                            <div id="nowDiv"></div>
+                        </body>
+                    </div>
+
+                    <div class="channel">
+                        <h3>
+                            <span id="news01">学习园地</span>
+                        </h3>
+
+                        <div class="imagesshow">
+                            <img class="D1" src="images/D1.jpg">
+                            <img class="D2" src="images/D2.jpg">
+                            <img class="D3" src="images/D3.jpg">
+
+                        </div>
+                    </div>
+
+                    <div class="channel">
+                        <h3>
+                            <span id="news01">毕业季</span>
+                        </h3>
+
+                        <div class="imagesshow">
+                            <img class="D4" src="images/graduation01.png">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

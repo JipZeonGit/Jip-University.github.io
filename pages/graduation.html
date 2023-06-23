@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园网主页</title>
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="indexheader">
+        <div id="header">
+            <div class='logo'>
+                <img src="../images/logo.jpg" alt="大学">
+            </div>
+
+            <form name="searchingForm" action="" target="_blank">
+                <div class="searchbox">
+                    <input name="s" type="hidden" value="">
+                    <input name="q" type="text" class="search" value="搜索"
+                        onfocus="if (value =='搜索'){value ='';this.style.color='#000000'}"
+                        onblur="if (value ==''){value='搜索';this.style.color='#CCC'}"
+                        onkeydown="if(this.value=='搜索'){this.value='';this.style.color=000000}">
+                    <input type="button" class="searchbotton" name="sbtn" onclick="submit()">
+                </div>
+                <input type="hidden" value="0" name="pagenum">
+            </form>
+        </div>
+    </div>
+    <!--头部部分写完-->
+
+    <div class="indexnav">
+        <div id="nav1">
+            <a href="../index.html">
+                <span class="home">&nbsp;</span>
+            </a>
+
+            <a href="../index.html"><span class="on" id="tag2"
+                    onmouseover="switchTag('tag2','subnav2');this.blur();">我的大学</span>
+            </a>
+
+            <a href=""><span class="sp" id="tag3"
+                    onmouseover="switchTag('tag3','subnav3');this.blur();">疫情防控</span>
+            </a>
+
+            <a href=""><span class="sp" id="tag4"
+                    onmouseover="switchTag('tag4','subnav4');this.blur();">新生报到</span>
+            </a>
+
+            <a href=""><span class="sp" id="tag5"
+                    onmouseover="switchTag('tag5','subnav5');this.blur();">数字校园</span>
+            </a>
+
+            <a href=""><span class="sp" id="tag6"
+                    onmouseover="switchTag('tag6','subnav6');this.blur();">学校地图</span>
+            </a>
+
+            <a href=""><span class="sp" id="tag7"
+                    onmouseover="switchTag('tag7','subnav7');this.blur();">招生概况</span>
+            </a>
+
+            <a href="./graduation.html"><span class="sp" id="tag8"
+                    onmouseover="switchTag('tag8','subnav8');this.blur();">毕业季</span>
+            </a>
+
+            <a href="./upload.html"><span class="sp" id="tag9"
+                    onmouseover="switchTag('tag9','subnav9');this.blur();">信息反馈</span>
+            </a>
+
+        </div>
+    </div>
+    <!--导航栏部分写完-->
+    <div class="indexsubnav">
+        <div id="subnav">
+            <div id="subnav2" class="hidecontent">
+                <a href="../index.html">学校简介</a>
+                |
+                <a href="../index.html">学校地图</a>
+                |
+                <a href="../index.html">现任教师</a>
+                |
+                <a href="../index.html">校歌 校训 校徽</a>
+                |
+                <a href="../index.html">学校历史</a>
+                |
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="mainbody">
+            <img class="graduation" src="../images/Graduation02.png">
+
+            <div class="cols">
+                <div class="colscenter">
+                    <div class="cols03">
+                        
+                        <div class="channel">
+                            <h3>
+                                <span id="news01">毕业赠言</span>
+                            </h3>
+
+                            <div class="newslist01">
+                                <ul>
+                                    <li><span class="newstime">06-25</span>小李：拍下母校的照片，留住对母校的思念，接住朋友的祝愿，留下对大学的眷恋，铭记生活的困难，留住对大学的沉淀，带着大学的回忆，走向未来的蓝天！</li>
+                                    <li><span class="newstime">06-18</span>小何：现在的结束只是为下一个阶段学习的开始打下基础。我又将重新整装，确定新的目标，迎接下一个阶段的学习。</li>
+                                    <li><span class="newstime">06-17</span>小白：坚信自己是颗星，穿云破雾亮晶晶。坚信自己是燧石，不怕敲打和曲折，坚信自己是人才，驱散浮云与阴霾。即将毕业，愿拥有完美未来。</li>
+                                    <li><span class="newstime">06-23</span>小叶：毕业的脚步催着离别的花开，友情的列车永远没有终点，珍藏快乐的滴滴点点，记忆的扉页由你加添，一生朋友一世情缘，祝愿我们的未来更辉煌灿烂。</li>
+                                    <li><span class="newstime">06-23</span>小黄：无论我们有多少眷恋，有多少不舍，都唤不回逝去的时光。但我们无须失落，无须感伤，心是成长的力量，年轻是飞翔的天堂，我们依然能够一路高歌，策马奔腾，让六月的骄阳永远见证我们的无悔青春。</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

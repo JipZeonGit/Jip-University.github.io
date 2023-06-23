@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 998px;
+    height: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    border-radius:10px;
+}
+
+#index {
+    position: absolute;
+    left: 900px;
+    bottom: 10px;
+
+}
+
+#index li {
+    width: 8px;
+    height: 8px;
+    border: solid 1px gray;
+    border-radius: 100%;
+    background-color: #eee;
+    display: inline-block;
+}
+
+#img {
+    width: 4990px;
+    /*不给宽高无法移动*/
+    height: 300px;
+    position: absolute;
+    /*不定义absolute，js无法设置left和top*/
+    z-index: -1;
+    border-radius:10px;
+}
+
+#img li {
+    width: 998px;
+    height: 300px;
+    float: left;
+}
+
+#index .on {
+    background-color: black;
+}

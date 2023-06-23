@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园网主页</title>
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="indexheader">
+        <div id="header">
+            <div class='logo'>
+                <img src="../images/logo.jpg" alt="大学">
+            </div>
+
+            <form name="searchingForm" action="" target="_blank">
+                <div class="searchbox">
+                    <input name="s" type="hidden" value="">
+                    <input name="q" type="text" class="search" value="搜索"
+                        onfocus="if (value =='搜索'){value ='';this.style.color='#000000'}"
+                        onblur="if (value ==''){value='搜索';this.style.color='#CCC'}"
+                        onkeydown="if(this.value=='搜索'){this.value='';this.style.color=000000}">
+                    <input type="button" class="searchbotton" name="sbtn" onclick="submit()">
+                </div>
+                <input type="hidden" value="0" name="pagenum">
+            </form>
+        </div>
+    </div>
+    <!--头部部分写完-->
+
+    <div class="indexnav">
+        <div id="nav1">
+            <a href="../index.html">
+                <span class="home">&nbsp;</span>
+            </a>
+
+            <a href="../index.html"><span class="on" id="tag2"
+                    onmouseover="switchTag('tag2','subnav2');this.blur();">我的大学</span>
+            </a>
+
+            <a href=""><span class="sp" id="tag3" onmouseover="switchTag('tag3','subnav3');this.blur();">疫情防控</span>
+            </a>
+
+            <a href=""><span class="sp" id="tag4" onmouseover="switchTag('tag4','subnav4');this.blur();">新生报到</span>
+            </a>
+
+            <a href=""><span class="sp" id="tag5" onmouseover="switchTag('tag5','subnav5');this.blur();">数字校园</span>
+            </a>
+
+            <a href=""><span class="sp" id="tag6" onmouseover="switchTag('tag6','subnav6');this.blur();">学校地图</span>
+            </a>
+
+            <a href=""><span class="sp" id="tag7" onmouseover="switchTag('tag7','subnav7');this.blur();">招生概况</span>
+            </a>
+
+            <a href="./graduation.html"><span class="sp" id="tag8"
+                    onmouseover="switchTag('tag8','subnav8');this.blur();">毕业季</span>
+            </a>
+
+            <a href="./upload.html"><span class="sp" id="tag9"
+                    onmouseover="switchTag('tag9','subnav9');this.blur();">信息反馈</span>
+            </a>
+
+        </div>
+    </div>
+    <!--导航栏部分写完-->
+    <div class="indexsubnav">
+        <div id="subnav">
+            <div id="subnav2" class="hidecontent">
+                <a href="../index.html">学校简介</a>
+                |
+                <a href="../index.html">学校地图</a>
+                |
+                <a href="../index.html">现任教师</a>
+                |
+                <a href="../index.html">校歌 校训 校徽</a>
+                |
+                <a href="../index.html">学校历史</a>
+                |
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="mainbody">
+
+            <div class="cols">
+                <div class="colscenter">
+                    <div class="cols03">
+
+                        <div class="channel">
+                            <h3>
+                                <center><span id="news01">请输入反馈的内容</span></center>
+                            </h3>
+
+                            <div class="text">
+                                <textarea class="text1" cols=105 rows=30></textarea>
+                                <center><button onClick="myClick()" class="button1">发送</button></center>
+                                <script>
+                                    function myClick()
+                                    {
+                                    alert("你的建议已经发送！");
+                                    location.reload(); //BOM对象
+                                    }
+                                </script>
+                            </div>
+                        </div>
+
+                        <div class="channel">
+                            <p></p>
+                            <p></p>
+                            <center><p class="advices">非常感谢您宝贵的建议！</p></center>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
